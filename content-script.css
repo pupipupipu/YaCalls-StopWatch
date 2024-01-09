@@ -1,0 +1,107 @@
+.stop-watch-container{
+	display: inline-block;
+	position: absolute;
+
+	z-index: 100;
+	top: 35px;
+	right: -160px;
+
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 2px solid black;
+  font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 1.25em;
+	
+	background-color: white;
+}
+
+.container-calls-and-days{
+	display: flex;
+	position: absolute;
+	font-weight: 300;
+
+	z-index: 100;
+	top: 95px;
+	right: -400px;
+}
+.container-work-days{
+	margin-left: 75px;
+}
+
+.input-call-counter,
+.input-call-month,
+.input-call-counter-day,
+.input-call-work-days,
+.input-call-work-days-passed{
+	border: 2px solid #cbcbcb;
+	font-weight: 700;
+
+	border-radius: 5px;
+
+	color: #d3d3d3;
+	width: 60px;
+	display: block;
+	padding: 3px 5px;
+}
+
+.span-call-counter,
+.span-call-month,
+.span-call-counter-day,
+.span-call-work-days,
+.span-call-work-days-passed,
+.span-call-counter-lack,
+.span-inscription-counter-lack{
+	color: #a8a8a8;
+}
+.span-call-month{
+	display: block;
+	margin-top: 25px;
+}
+.span-call-work-days,
+.input-call-work-days,
+.span-call-work-days-passed,
+.span-call-counter-lack,
+.span-call-counter-lack-day{
+	font-size: 12px;
+}
+.input-call-work-days,
+.input-call-work-days-passed{
+	border: 1px solid #f4f4f4;
+	font-weight: normal;
+}
+.span-call-counter-lack,
+.span-call-counter-lack-day{
+	display: inline-block;
+	position: relative;
+	top: 21px;
+	right: -45px;
+	font-weight: bold;
+	width: 30px;
+}
+.span-inscription-counter-lack,
+.span-inscription-counter-lack-day {
+	display: inline-block;
+	position: relative;
+	font-size: 10px;
+
+	top: 20px;
+	right: -15px;
+
+	width: 30px;
+}
+.span-inscription-counter-lack-day{
+	right: -23px;
+}
+.span-call-counter-lack-day{
+	right: -53px;
+}
+.calendar {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: relative;
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+}

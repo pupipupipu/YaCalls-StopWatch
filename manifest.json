@@ -1,0 +1,27 @@
+{
+	"name": "__MSG_name__",
+	"version": "2.1.0",
+	"manifest_version": 3,
+	"default_locale" : "ru",
+	"description": "__MSG_description__",
+	"icons": {
+		"32" : "./icons/icon-32.png",
+		"64" : "./icons/icon-64.png",
+		"128" : "./icons/icon-128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://yacalls.yandex-team.ru/*"],
+			"run_at": "document_idle",
+			"all_frames": false,
+			"js": ["functions.js", "content-script.js"]
+		}
+	],
+	"host_permissions": ["https://yacalls.yandex-team.ru/*"],
+	"web_accessible_resources":	[
+		{
+			"resources": ["content-script.css"],
+			"matches": ["https://yacalls.yandex-team.ru/*"]
+		}
+	]
+}
